@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0B1120] text-white;
+  }
+}
+
+@layer utilities {
+  .animate-tilt {
+    animation: tilt 10s infinite linear;
+  }
+}
+
+@keyframes tilt {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#0B1120];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#1E293B] rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-[#334155];
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
