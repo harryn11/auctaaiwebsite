@@ -108,9 +108,8 @@ export default function Hero() {
                 }}
                 whileHover={{ 
                   scale: 1.05,
-                  transition: { duration: 0.15 }
+                  transition: { duration: 0.2 }
                 }}
-                whileTap={{ scale: 0.98 }}
               >
                 <div className="relative overflow-hidden rounded-lg bg-primary-light/50 backdrop-blur-sm border border-accent/20 p-3 h-16 flex items-center justify-center group-hover:border-accent/40 transition-all duration-300">
                   <motion.div
