@@ -19,7 +19,7 @@ export default function FAQ() {
     },
     {
       question: "How long does the process typically take?",
-      answer: "Our methodology typically takes 3-6 months from initial consultation to full implementation. The education phase takes 2-4 weeks, strategy development 2-3 weeks, and implementation varies based on complexity."
+      answer: "The process will typically take 2-4 months from initial consultation to full implementation. The education phase takes 2-4 weeks, strategy development 2-3 weeks, and implementation varies based on complexity."
     },
     {
       question: "What if we've had failed AI implementations before?",
