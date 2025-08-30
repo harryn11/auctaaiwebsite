@@ -69,7 +69,7 @@ export default function ProcessAutomationPage() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight bg-gradient-to-r from-accent to-accent-light text-transparent bg-clip-text pb-2">
+          <h1 className="text-4xl sm:text-5xl gradient-title-hero pb-2">
             Implementation Services
           </h1>
           <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">
