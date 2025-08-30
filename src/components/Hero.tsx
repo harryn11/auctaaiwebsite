@@ -13,7 +13,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <motion.h1 
-            className="text-4xl sm:text-6xl font-bold tracking-tight bg-gradient-to-r from-accent to-accent-light text-transparent bg-clip-text"
+            className="text-4xl sm:text-6xl gradient-title-hero"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ 

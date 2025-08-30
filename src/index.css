@@ -47,3 +47,54 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Modern gradient title styling */
+.gradient-title {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #14B8A6 0%, #2DD4BF 50%, #5EEAD4 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 4s ease-in-out infinite;
+  text-shadow: 0 0 40px rgba(20, 184, 166, 0.3);
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Enhanced gradient for larger titles */
+.gradient-title-hero {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  background: linear-gradient(135deg, #14B8A6 0%, #2DD4BF 30%, #5EEAD4 60%, #A7F3D0 100%);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift-hero 6s ease-in-out infinite;
+  filter: drop-shadow(0 0 20px rgba(20, 184, 166, 0.4));
+}
+
+@keyframes gradient-shift-hero {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  33% {
+    background-position: 100% 50%;
+  }
+  66% {
+    background-position: 50% 100%;
+  }
+}
