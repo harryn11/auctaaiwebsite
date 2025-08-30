@@ -120,7 +120,7 @@ export default function Future() {
                 className={`inline-flex items-center bg-accent hover:bg-accent-dark text-white px-8 py-3 rounded-md transition-colors group ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
                 disabled={isSubmitting}
               >
-                {isSubmitting ? 'Booking...' : 'Book AI Consultation'}
+                {isSubmitting ? 'Booking...' : 'Send Message'}
                 <Send className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
