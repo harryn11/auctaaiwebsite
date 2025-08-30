@@ -58,7 +58,7 @@ export default function Hero() {
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              Our Methodology
+              Learn More
             </motion.a>
           </motion.div>
         </motion.div>
