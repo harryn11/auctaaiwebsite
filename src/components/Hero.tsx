@@ -111,7 +111,10 @@ export default function Hero() {
                   transition: { duration: 0.2 }
                 }}
               >
-                <div className="relative overflow-hidden rounded-lg bg-primary-light/50 backdrop-blur-sm border border-accent/20 p-3 h-16 flex items-center justify-center group-hover:border-accent/40 transition-all duration-300">
+                <Link
+                  to={`/solutions/${solution.name.toLowerCase().replace(' ', '-')}`}
+                  className="relative overflow-hidden rounded-lg bg-primary-light/50 backdrop-blur-sm border border-accent/20 p-3 h-16 flex items-center justify-center group-hover:border-accent/40 transition-all duration-300 cursor-pointer block"
+                >
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-r from-accent/10 to-accent-light/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                     initial={false}
@@ -160,9 +163,53 @@ export default function Hero() {
                       />
                     ))}
                   </motion.div>
-                </div>
+                </Link>
               </motion.div>
             ))}
+          </motion.div>
+          
+          {/* Free AI Audit Promotion */}
+          <motion.div
+            className="text-center mt-16"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 2.8 }}
+          >
+            <motion.div
+              className="inline-block bg-gradient-to-r from-accent/20 to-accent-light/20 backdrop-blur-sm border border-accent/30 rounded-2xl p-6 max-w-md mx-auto"
+              whileHover={{ 
+                scale: 1.02,
+                boxShadow: "0 0 30px rgba(20, 184, 166, 0.2)"
+              }}
+              transition={{ type: "spring", stiffness: 300, damping: 15 }}
+            >
+              <motion.div
+                className="flex items-center justify-center gap-2 mb-3"
+                animate={{
+                  scale: [1, 1.05, 1],
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              >
+                <div className="w-2 h-2 bg-accent rounded-full"></div>
+                <span className="text-accent font-semibold text-sm uppercase tracking-wider">Free AI Audit</span>
+                <div className="w-2 h-2 bg-accent rounded-full"></div>
+              </motion.div>
+              <p className="text-white text-sm mb-4">
+                Get a complimentary assessment of your AI automation opportunities
+              </p>
+              <motion.a
+                href="#consultation"
+                className="inline-flex items-center bg-accent hover:bg-accent-dark text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Claim Your Free Audit
+              </motion.a>
+            </motion.div>
           </motion.div>
           
           <motion.div
