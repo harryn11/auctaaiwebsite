@@ -58,15 +58,6 @@ export default function AIAgentsPage() {
         "Competitive advantage strategies",
         "Risk assessment and mitigation"
       ]
-    },
-    {
-      title: "Capability Building",
-      points: [
-        "Internal team skill development",
-        "Knowledge transfer programs",
-        "Best practices implementation",
-        "Independent operation enablement"
-      ]
     }
   ];
 
@@ -111,7 +102,7 @@ export default function AIAgentsPage() {
           ))}
         </div>
 
-        <div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-8">
           {partnershipBenefits.map((benefit, index) => (
             <div key={index} className="bg-primary-light rounded-lg p-8">
               <h3 className="text-xl font-bold text-white mb-6">{benefit.title}</h3>
