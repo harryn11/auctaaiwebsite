@@ -64,7 +64,7 @@ export default function Navbar() {
                 className="text-gray-300 hover:text-accent transition-colors"
                 onClick={() => handleSectionNavigation('consultation')}
               >
-                Consultation
+                Contact Us
               </button>
             </div>
           </div>
