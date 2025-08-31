@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Bot, MessageSquare, Calendar, ShoppingCart, ArrowLeft, Rocket } from 'lucide-react';
+import { TrendingUp, Users, Target, Zap, ArrowLeft, Rocket } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 
 export default function AIAgentsPage() {
@@ -13,34 +13,51 @@ export default function AIAgentsPage() {
     e.preventDefault();
     navigate('/');
     setTimeout(() => {
-      document.getElementById('consultation')?.scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
     }, 100);
   };
 
-  const agentTypes = [
+  const services = [
     {
-      icon: <MessageSquare className="w-8 h-8 text-accent" />,
-      title: "Customer Service Agents",
-      description: "24/7 intelligent customer support that handles inquiries, resolves issues, and escalates complex cases to human agents.",
-      examples: ["Handle product inquiries", "Process returns and refunds", "Provide technical support", "Schedule appointments"]
+      icon: <TrendingUp className="w-8 h-8 text-accent" />,
+      title: "Performance Optimization & Monitoring",
+      description: "Continuous monitoring and optimization of your AI solutions to ensure they deliver sustained value and improve over time."
     },
     {
-      icon: <Calendar className="w-8 h-8 text-accent" />,
-      title: "Sales & Lead Qualification Agents",
-      description: "Intelligent agents that qualify leads, schedule meetings, and nurture prospects through your sales funnel.",
-      examples: ["Qualify incoming leads", "Schedule sales calls", "Follow up on proposals", "Nurture cold prospects"]
+      icon: <Target className="w-8 h-8 text-accent" />,
+      title: "Capability Expansion Planning",
+      description: "Strategic planning for expanding your AI capabilities as your business grows and new opportunities emerge."
     },
     {
-      icon: <Bot className="w-8 h-8 text-accent" />,
-      title: "Internal Process Agents",
-      description: "Automate internal workflows, data entry, and routine tasks to free up your team for high-value activities.",
-      examples: ["Process invoices", "Update CRM records", "Generate reports", "Manage inventory"]
+      icon: <Users className="w-8 h-8 text-accent" />,
+      title: "Strategic Advisory Services",
+      description: "Ongoing strategic guidance to help you navigate the evolving AI landscape and maintain competitive advantage."
     },
     {
-      icon: <ShoppingCart className="w-8 h-8 text-accent" />,
-      title: "E-commerce Agents",
-      description: "Specialized agents for online businesses that handle orders, inventory, and customer interactions.",
-      examples: ["Process orders", "Manage inventory alerts", "Handle shipping inquiries", "Upsell products"]
+      icon: <Zap className="w-8 h-8 text-accent" />,
+      title: "Team Development & Training",
+      description: "Continuous education and skill development for your team to build internal AI expertise and capabilities."
+    }
+  ];
+
+  const partnershipBenefits = [
+    {
+      title: "Long-term Success",
+      points: [
+        "Continuous optimization of AI solutions",
+        "Regular performance reviews and improvements",
+        "Adaptation to changing business needs",
+        "Proactive identification of new opportunities"
+      ]
+    },
+    {
+      title: "Strategic Guidance",
+      points: [
+        "AI landscape updates and insights",
+        "Technology roadmap planning",
+        "Competitive advantage strategies",
+        "Risk assessment and mitigation"
+      ]
     }
   ];
 
@@ -56,15 +73,15 @@ export default function AIAgentsPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl gradient-title-hero pb-2">
-            AI Agents
+            Ongoing Partnership
           </h1>
           <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">
-            Intelligent autonomous agents that work 24/7 to handle tasks, interact with customers, and streamline your business operations
+            Long-term strategic partnership for sustained AI transformation and growth
           </p>
         </div>
 
         <div className="mt-20 grid grid-cols-1 gap-12 md:grid-cols-2">
-          {agentTypes.map((agent, index) => (
+          {services.map((service, index) => (
             <div
               key={index}
               className="relative group"
@@ -72,53 +89,64 @@ export default function AIAgentsPage() {
               <div className="absolute -inset-0.5 bg-gradient-to-r from-accent/50 to-accent-light/50 rounded-lg blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
               <div className="relative h-full p-8 bg-primary-light rounded-lg border border-accent/20">
                 <div className="flex items-center mb-6">
-                  {agent.icon}
+                  {service.icon}
                   <h3 className="text-xl font-bold text-white ml-4">
-                    {agent.title}
+                    {service.title}
                   </h3>
                 </div>
-                <p className="text-gray-400 mb-6">
-                  {agent.description}
+                <p className="text-gray-400">
+                  {service.description}
                 </p>
-                <div>
-                  <h4 className="text-sm font-semibold text-accent mb-3">Examples:</h4>
-                  <ul className="space-y-2">
-                    {agent.examples.map((example, exampleIndex) => (
-                      <li key={exampleIndex} className="flex items-center text-gray-300 text-sm">
-                        <div className="w-1.5 h-1.5 bg-accent rounded-full mr-3"></div>
-                        {example}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
               </div>
             </div>
           ))}
         </div>
 
+        <div className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-8">
+          {partnershipBenefits.map((benefit, index) => (
+            <div key={index} className="bg-primary-light rounded-lg p-8">
+              <h3 className="text-xl font-bold text-white mb-6">{benefit.title}</h3>
+              <ul className="space-y-4">
+                {benefit.points.map((point, pointIndex) => (
+                  <li key={pointIndex} className="flex items-center text-gray-300">
+                    <Target className="w-5 h-5 text-accent mr-3" />
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
         <div className="mt-24 bg-primary-light rounded-2xl p-8 md:p-12">
-          <h2 className="text-3xl font-bold text-white mb-8">How AI Agents Transform Your Business</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Bot className="w-8 h-8 text-accent" />
+          <h2 className="text-3xl font-bold text-white mb-8">Partnership Approach</h2>
+          <div className="space-y-8">
+            <div className="flex gap-6">
+              <div className="flex-shrink-0 w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center">
+                <span className="text-xl font-bold text-accent">1</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">24/7 Availability</h3>
-              <p className="text-gray-400">Your AI agents never sleep, ensuring continuous service and support for your customers and operations.</p>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">Continuous Monitoring</h3>
+                <p className="text-gray-400">We continuously monitor the performance of your AI solutions, identifying opportunities for optimization and improvement to ensure sustained value delivery.</p>
+              </div>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MessageSquare className="w-8 h-8 text-accent" />
+            <div className="flex gap-6">
+              <div className="flex-shrink-0 w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center">
+                <span className="text-xl font-bold text-accent">2</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">Consistent Quality</h3>
-              <p className="text-gray-400">Every interaction follows your exact standards and protocols, ensuring consistent customer experience.</p>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">Strategic Evolution</h3>
+                <p className="text-gray-400">As your business grows and the AI landscape evolves, we help you adapt and expand your AI capabilities to maintain competitive advantage.</p>
+              </div>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Calendar className="w-8 h-8 text-accent" />
+            <div className="flex gap-6">
+              <div className="flex-shrink-0 w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center">
+                <span className="text-xl font-bold text-accent">3</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">Scalable Operations</h3>
-              <p className="text-gray-400">Handle unlimited simultaneous interactions without additional staffing costs or training time.</p>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">Independence Building</h3>
+                <p className="text-gray-400">Our ultimate goal is to build your internal capabilities so you can eventually manage and expand your AI initiatives independently.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -132,10 +160,10 @@ export default function AIAgentsPage() {
             <div className="relative py-16 px-8 sm:px-16 lg:py-20">
               <div className="text-center">
                 <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                  Ready to Deploy AI Agents?
+                  Ready to Transform Your Business With AI?
                 </h2>
                 <p className="mt-4 text-xl text-white/90">
-                  Let's discuss how AI agents can transform your specific business operations.
+                  Start your AI transformation journey with our proven methodology.
                 </p>
                 <div className="mt-8 flex justify-center">
                   <Link

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
@@ -71,10 +70,19 @@ export default function Hero() {
       </div>
       
       {/* AI Solutions Showcase */}
-      <div className="absolute bottom-0 left-0 right-0 pb-32">
+      <div className="absolute bottom-0 left-0 right-0 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto"
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1 }}
+          >
+            <p className="text-gray-400 text-lg mb-8"></p>
+          </motion.div>
+          
+          <motion.div
+            className="grid grid-cols-2 md:grid-cols-3 gap-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.2 }}
@@ -103,16 +111,13 @@ export default function Hero() {
                   transition: { duration: 0.2 }
                 }}
               >
-                <Link
-                  to={`/solutions/${solution.name.toLowerCase().replace(' ', '-')}`}
-                  className="relative overflow-hidden rounded-lg bg-primary-light/50 backdrop-blur-sm border border-accent/20 p-6 h-24 flex items-center justify-center group-hover:border-accent/40 transition-all duration-300 cursor-pointer block"
-                >
+                <div className="relative overflow-hidden rounded-lg bg-primary-light/50 backdrop-blur-sm border border-accent/20 p-3 h-16 flex items-center justify-center group-hover:border-accent/40 transition-all duration-300">
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-r from-accent/10 to-accent-light/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                     initial={false}
                   />
                   <motion.span
-                    className="relative text-base font-medium text-gray-300 group-hover:text-white transition-colors duration-300 text-center"
+                    className="relative text-xs font-medium text-gray-300 group-hover:text-white transition-colors duration-300 text-center"
                     animate={{
                       textShadow: [
                         "0 0 0px rgba(20, 184, 166, 0)",
@@ -155,7 +160,7 @@ export default function Hero() {
                       />
                     ))}
                   </motion.div>
-                </Link>
+                </div>
               </motion.div>
             ))}
           </motion.div>
