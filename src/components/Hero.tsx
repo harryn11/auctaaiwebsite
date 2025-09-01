@@ -43,7 +43,7 @@ export default function Hero() {
           >
             <motion.a
               href="#consultation"
-              className="bg-accent text-white px-8 py-3 rounded-md hover:bg-accent-dark transition-colors flex items-center gap-2"
+              className="bg-accent text-white px-8 py-3 rounded-md hover:bg-accent-dark transition-colors flex items-center justify-center gap-2"
               whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(20, 184, 166, 0.3)" }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
