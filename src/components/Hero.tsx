@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <div className="relative overflow-hidden pt-32 pb-80 lg:pt-40">
+    <div className="relative overflow-hidden pt-32 pb-96 sm:pb-80 lg:pt-40">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="text-center"
@@ -36,7 +36,7 @@ export default function Hero() {
             We help businesses become AI-powered through our proven Educate → Strategise → Implement methodology. Strategic planning before technology, education before implementation.
           </motion.p>
           <motion.div 
-            className="mt-10 flex justify-center gap-4"
+            className="mt-10 flex flex-col sm:flex-row justify-center gap-4 mb-16 sm:mb-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -70,7 +70,7 @@ export default function Hero() {
       </div>
       
       {/* AI Solutions Showcase */}
-      <div className="absolute bottom-0 left-0 right-0 pb-16">
+      <div className="absolute bottom-0 left-0 right-0 pb-16 sm:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="text-center mb-12"
