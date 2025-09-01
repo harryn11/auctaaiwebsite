@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import { Bot, MessageSquare, Calendar, ShoppingCart, ArrowLeft, Rocket } from 'lucide-react';
+import { Brain, TrendingUp, Target, Zap, ArrowLeft, Rocket } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 
-export default function AIAgentsPage() {
+export default function PredictiveAnalyticsPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -16,37 +16,37 @@ export default function AIAgentsPage() {
 
   const features = [
     {
-      icon: <MessageSquare className="w-8 h-8 text-accent" />,
-      title: "Customer Support Agents",
-      description: "AI-powered chatbots that handle customer inquiries 24/7, escalating complex issues to human agents when needed."
+      icon: <Brain className="w-8 h-8 text-accent" />,
+      title: "Demand Forecasting",
+      description: "Predict future demand patterns using historical data, market trends, and external factors to optimize inventory and resource planning."
     },
     {
-      icon: <Calendar className="w-8 h-8 text-accent" />,
-      title: "Scheduling Assistants",
-      description: "Intelligent agents that manage appointments, coordinate meetings, and optimize calendar scheduling across teams."
+      icon: <TrendingUp className="w-8 h-8 text-accent" />,
+      title: "Customer Behavior Prediction",
+      description: "Anticipate customer actions, preferences, and lifetime value to personalize experiences and improve retention strategies."
     },
     {
-      icon: <ShoppingCart className="w-8 h-8 text-accent" />,
-      title: "Sales Qualification Agents",
-      description: "AI agents that qualify leads, gather prospect information, and route qualified opportunities to sales teams."
+      icon: <Target className="w-8 h-8 text-accent" />,
+      title: "Risk Assessment",
+      description: "Identify potential risks, fraud patterns, and business threats before they impact your operations using advanced ML models."
     },
     {
-      icon: <Bot className="w-8 h-8 text-accent" />,
-      title: "Process Automation Agents",
-      description: "Intelligent agents that monitor workflows, trigger actions based on conditions, and handle routine business processes."
+      icon: <Zap className="w-8 h-8 text-accent" />,
+      title: "Performance Optimization",
+      description: "Predict system performance, maintenance needs, and operational bottlenecks to proactively optimize business processes."
     }
   ];
 
   const examples = [
     {
-      title: "E-commerce Customer Service",
-      description: "An online retailer implemented AI agents to handle order inquiries, returns, and product questions, reducing response time from hours to seconds while maintaining 95% customer satisfaction.",
-      metrics: ["80% reduction in support tickets", "24/7 availability", "95% customer satisfaction"]
+      title: "Retail Demand Forecasting",
+      description: "A fashion retailer implemented predictive analytics to forecast seasonal demand, optimize inventory levels, and reduce overstock by analyzing weather patterns, trends, and historical sales data.",
+      metrics: ["35% reduction in overstock", "90% forecast accuracy", "25% increase in profit margins"]
     },
     {
-      title: "Healthcare Appointment Management",
-      description: "A medical practice deployed scheduling agents to manage patient appointments, send reminders, and handle rescheduling requests automatically.",
-      metrics: ["60% reduction in no-shows", "90% booking accuracy", "50% less admin time"]
+      title: "Financial Risk Prediction",
+      description: "A financial services company deployed ML models to predict loan defaults, assess credit risk, and identify fraudulent transactions in real-time.",
+      metrics: ["40% reduction in default rates", "99.8% fraud detection accuracy", "60% faster risk assessment"]
     }
   ];
 
@@ -62,10 +62,10 @@ export default function AIAgentsPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl gradient-title-hero pb-2">
-            AI Agents
+            Predictive Analytics
           </h1>
           <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">
-            Intelligent autonomous agents that handle tasks, make decisions, and interact with customers on your behalf
+            Harness the power of machine learning to predict future trends, behaviors, and outcomes for strategic advantage
           </p>
         </div>
 
@@ -92,7 +92,7 @@ export default function AIAgentsPage() {
         </div>
 
         <div className="mt-24">
-          <h2 className="text-3xl font-bold text-white text-center mb-12">Real-World Examples</h2>
+          <h2 className="text-3xl font-bold text-white text-center mb-12">Success Stories</h2>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             {examples.map((example, index) => (
               <div key={index} className="bg-primary-light rounded-lg p-8">
@@ -121,10 +121,10 @@ export default function AIAgentsPage() {
             <div className="relative py-16 px-8 sm:px-16 lg:py-20">
               <div className="text-center">
                 <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                  Ready to Deploy AI Agents?
+                  Ready to Predict the Future?
                 </h2>
                 <p className="mt-4 text-xl text-white/90">
-                  Let's discuss how AI agents can transform your business operations.
+                  Let's discuss how predictive analytics can give you competitive advantage.
                 </p>
                 <div className="mt-8 flex justify-center">
                   <Link

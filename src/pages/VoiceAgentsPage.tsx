@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import { Bot, MessageSquare, Calendar, ShoppingCart, ArrowLeft, Rocket } from 'lucide-react';
+import { Phone, Headphones, Clock, Users, ArrowLeft, Rocket } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 
-export default function AIAgentsPage() {
+export default function VoiceAgentsPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -16,37 +16,37 @@ export default function AIAgentsPage() {
 
   const features = [
     {
-      icon: <MessageSquare className="w-8 h-8 text-accent" />,
-      title: "Customer Support Agents",
-      description: "AI-powered chatbots that handle customer inquiries 24/7, escalating complex issues to human agents when needed."
+      icon: <Phone className="w-8 h-8 text-accent" />,
+      title: "Inbound Call Handling",
+      description: "AI voice agents that answer calls, route inquiries, and handle common customer service requests with natural conversation."
     },
     {
-      icon: <Calendar className="w-8 h-8 text-accent" />,
-      title: "Scheduling Assistants",
-      description: "Intelligent agents that manage appointments, coordinate meetings, and optimize calendar scheduling across teams."
+      icon: <Headphones className="w-8 h-8 text-accent" />,
+      title: "Outbound Sales Calls",
+      description: "Intelligent voice agents that make prospecting calls, qualify leads, and schedule appointments with potential customers."
     },
     {
-      icon: <ShoppingCart className="w-8 h-8 text-accent" />,
-      title: "Sales Qualification Agents",
-      description: "AI agents that qualify leads, gather prospect information, and route qualified opportunities to sales teams."
+      icon: <Clock className="w-8 h-8 text-accent" />,
+      title: "Appointment Scheduling",
+      description: "Voice-enabled scheduling agents that handle appointment bookings, confirmations, and rescheduling through natural phone conversations."
     },
     {
-      icon: <Bot className="w-8 h-8 text-accent" />,
-      title: "Process Automation Agents",
-      description: "Intelligent agents that monitor workflows, trigger actions based on conditions, and handle routine business processes."
+      icon: <Users className="w-8 h-8 text-accent" />,
+      title: "Customer Support",
+      description: "24/7 voice support agents that can resolve common issues, access customer data, and escalate complex problems to human agents."
     }
   ];
 
   const examples = [
     {
-      title: "E-commerce Customer Service",
-      description: "An online retailer implemented AI agents to handle order inquiries, returns, and product questions, reducing response time from hours to seconds while maintaining 95% customer satisfaction.",
-      metrics: ["80% reduction in support tickets", "24/7 availability", "95% customer satisfaction"]
+      title: "Medical Practice Phone System",
+      description: "A dental practice implemented voice agents to handle appointment scheduling, insurance verification, and basic patient inquiries, freeing up staff for patient care.",
+      metrics: ["70% of calls handled automatically", "90% appointment booking accuracy", "50% reduction in wait times"]
     },
     {
-      title: "Healthcare Appointment Management",
-      description: "A medical practice deployed scheduling agents to manage patient appointments, send reminders, and handle rescheduling requests automatically.",
-      metrics: ["60% reduction in no-shows", "90% booking accuracy", "50% less admin time"]
+      title: "Real Estate Lead Qualification",
+      description: "A real estate agency deployed voice agents to call leads from online forms, qualify their interest, and schedule property viewings with available agents.",
+      metrics: ["300% increase in lead contact rate", "45% improvement in qualification accuracy", "60% faster response times"]
     }
   ];
 
@@ -62,10 +62,10 @@ export default function AIAgentsPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl gradient-title-hero pb-2">
-            AI Agents
+            Voice Agents
           </h1>
           <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">
-            Intelligent autonomous agents that handle tasks, make decisions, and interact with customers on your behalf
+            AI-powered voice agents that handle phone calls, appointments, and customer interactions with natural conversation
           </p>
         </div>
 
@@ -92,7 +92,7 @@ export default function AIAgentsPage() {
         </div>
 
         <div className="mt-24">
-          <h2 className="text-3xl font-bold text-white text-center mb-12">Real-World Examples</h2>
+          <h2 className="text-3xl font-bold text-white text-center mb-12">Success Stories</h2>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             {examples.map((example, index) => (
               <div key={index} className="bg-primary-light rounded-lg p-8">
@@ -121,10 +121,10 @@ export default function AIAgentsPage() {
             <div className="relative py-16 px-8 sm:px-16 lg:py-20">
               <div className="text-center">
                 <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                  Ready to Deploy AI Agents?
+                  Ready to Deploy Voice Agents?
                 </h2>
                 <p className="mt-4 text-xl text-white/90">
-                  Let's discuss how AI agents can transform your business operations.
+                  Let's discuss how voice agents can enhance your customer interactions.
                 </p>
                 <div className="mt-8 flex justify-center">
                   <Link

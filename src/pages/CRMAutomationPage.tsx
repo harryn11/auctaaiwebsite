@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import { Bot, MessageSquare, Calendar, ShoppingCart, ArrowLeft, Rocket } from 'lucide-react';
+import { Database, Users, TrendingUp, Mail, ArrowLeft, Rocket } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 
-export default function AIAgentsPage() {
+export default function CRMAutomationPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -16,37 +16,37 @@ export default function AIAgentsPage() {
 
   const features = [
     {
-      icon: <MessageSquare className="w-8 h-8 text-accent" />,
-      title: "Customer Support Agents",
-      description: "AI-powered chatbots that handle customer inquiries 24/7, escalating complex issues to human agents when needed."
+      icon: <Database className="w-8 h-8 text-accent" />,
+      title: "Lead Scoring & Qualification",
+      description: "Automatically score and qualify leads based on behavior, demographics, and engagement patterns to prioritize sales efforts."
     },
     {
-      icon: <Calendar className="w-8 h-8 text-accent" />,
-      title: "Scheduling Assistants",
-      description: "Intelligent agents that manage appointments, coordinate meetings, and optimize calendar scheduling across teams."
+      icon: <Mail className="w-8 h-8 text-accent" />,
+      title: "Automated Follow-ups",
+      description: "Intelligent email sequences that adapt based on prospect responses and engagement levels, ensuring no lead falls through the cracks."
     },
     {
-      icon: <ShoppingCart className="w-8 h-8 text-accent" />,
-      title: "Sales Qualification Agents",
-      description: "AI agents that qualify leads, gather prospect information, and route qualified opportunities to sales teams."
+      icon: <Users className="w-8 h-8 text-accent" />,
+      title: "Customer Segmentation",
+      description: "AI-powered customer segmentation that identifies patterns and creates targeted groups for personalized marketing campaigns."
     },
     {
-      icon: <Bot className="w-8 h-8 text-accent" />,
-      title: "Process Automation Agents",
-      description: "Intelligent agents that monitor workflows, trigger actions based on conditions, and handle routine business processes."
+      icon: <TrendingUp className="w-8 h-8 text-accent" />,
+      title: "Sales Forecasting",
+      description: "Predictive analytics that forecast sales performance, identify trends, and provide insights for strategic decision-making."
     }
   ];
 
   const examples = [
     {
-      title: "E-commerce Customer Service",
-      description: "An online retailer implemented AI agents to handle order inquiries, returns, and product questions, reducing response time from hours to seconds while maintaining 95% customer satisfaction.",
-      metrics: ["80% reduction in support tickets", "24/7 availability", "95% customer satisfaction"]
+      title: "SaaS Company Lead Management",
+      description: "A software company automated their lead qualification process, automatically scoring prospects and routing high-value leads to senior sales reps while nurturing others through automated sequences.",
+      metrics: ["40% increase in qualified leads", "25% shorter sales cycle", "60% improvement in conversion rates"]
     },
     {
-      title: "Healthcare Appointment Management",
-      description: "A medical practice deployed scheduling agents to manage patient appointments, send reminders, and handle rescheduling requests automatically.",
-      metrics: ["60% reduction in no-shows", "90% booking accuracy", "50% less admin time"]
+      title: "Real Estate CRM Optimization",
+      description: "A real estate agency implemented AI-driven customer segmentation and automated follow-ups, resulting in better client relationships and increased property sales.",
+      metrics: ["35% more repeat customers", "50% faster response times", "30% increase in referrals"]
     }
   ];
 
@@ -62,10 +62,10 @@ export default function AIAgentsPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl gradient-title-hero pb-2">
-            AI Agents
+            CRM Automation
           </h1>
           <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">
-            Intelligent autonomous agents that handle tasks, make decisions, and interact with customers on your behalf
+            Intelligent customer relationship management that automates lead scoring, follow-ups, and sales processes
           </p>
         </div>
 
@@ -92,7 +92,7 @@ export default function AIAgentsPage() {
         </div>
 
         <div className="mt-24">
-          <h2 className="text-3xl font-bold text-white text-center mb-12">Real-World Examples</h2>
+          <h2 className="text-3xl font-bold text-white text-center mb-12">Success Stories</h2>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             {examples.map((example, index) => (
               <div key={index} className="bg-primary-light rounded-lg p-8">
@@ -121,10 +121,10 @@ export default function AIAgentsPage() {
             <div className="relative py-16 px-8 sm:px-16 lg:py-20">
               <div className="text-center">
                 <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                  Ready to Deploy AI Agents?
+                  Ready to Automate Your CRM?
                 </h2>
                 <p className="mt-4 text-xl text-white/90">
-                  Let's discuss how AI agents can transform your business operations.
+                  Let's discuss how CRM automation can transform your sales process.
                 </p>
                 <div className="mt-8 flex justify-center">
                   <Link

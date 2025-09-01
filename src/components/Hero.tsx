@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
@@ -88,12 +89,12 @@ export default function Hero() {
             transition={{ duration: 1, delay: 1.2 }}
           >
             {[
-              { name: "AI Agents", delay: 0 },
-              { name: "CRM Automation", delay: 0.1 },
-              { name: "Voice Agents", delay: 0.2 },
-              { name: "Data Analytics", delay: 0.3 },
-              { name: "Workflow Automation", delay: 0.4 },
-              { name: "Predictive Analytics", delay: 0.5 }
+              { name: "AI Agents", delay: 0, link: "/solutions/ai-agents" },
+              { name: "CRM Automation", delay: 0.1, link: "/solutions/crm-automation" },
+              { name: "Voice Agents", delay: 0.2, link: "/solutions/voice-agents" },
+              { name: "Data Analytics", delay: 0.3, link: "/solutions/data-analytics" },
+              { name: "Workflow Automation", delay: 0.4, link: "/solutions/workflow-automation" },
+              { name: "Predictive Analytics", delay: 0.5, link: "/solutions/predictive-analytics" }
             ].map((solution, index) => (
               <motion.div
                 key={index}
@@ -111,7 +112,10 @@ export default function Hero() {
                   transition: { duration: 0.2 }
                 }}
               >
-                <div className="relative overflow-hidden rounded-lg bg-primary-light/50 backdrop-blur-sm border border-accent/20 p-3 h-16 flex items-center justify-center group-hover:border-accent/40 transition-all duration-300">
+                <Link
+                  to={solution.link}
+                  className="relative overflow-hidden rounded-lg bg-primary-light/50 backdrop-blur-sm border border-accent/20 p-3 h-16 flex items-center justify-center group-hover:border-accent/40 transition-all duration-300 block"
+                >
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-r from-accent/10 to-accent-light/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                     initial={false}
@@ -160,7 +164,7 @@ export default function Hero() {
                       />
                     ))}
                   </motion.div>
-                </div>
+                </Link>
               </motion.div>
             ))}
           </motion.div>
