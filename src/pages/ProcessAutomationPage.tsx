@@ -100,21 +100,48 @@ export default function ProcessAutomationPage() {
         </div>
 
         <div className="mt-24">
-          <h2 className="text-3xl font-bold text-white text-center mb-12">Implementation Solutions</h2>
-          <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
-            {implementationTypes.map((type, index) => (
-              <div key={index} className="relative group overflow-hidden rounded-xl">
-                <div className="relative h-64 overflow-hidden">
-                  <img
-                    src={type.image}
-                    alt={type.title}
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/40"></div>
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-bold text-white">{type.title}</h3>
-                  <p className="mt-2 text-gray-300">{type.description}</p>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-white">Implementation Solutions</h2>
+            <p className="mt-4 text-xl text-gray-400">
+              Specialized AI implementations for your business needs
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              { name: "Workflow Automation", description: "Streamline complex business processes" },
+              { name: "Document Processing", description: "Intelligent document extraction and processing" },
+              { name: "Data Integration", description: "Smart system connections and data transfer" }
+            ].map((solution, index) => (
+              <div
+                key={index}
+                className="relative group"
+              >
+                <div className="relative overflow-hidden rounded-lg bg-primary-light/50 backdrop-blur-sm border border-accent/20 p-4 h-20 flex items-center justify-center group-hover:border-accent/40 transition-all duration-300">
+                  <div className="absolute inset-0 bg-gradient-to-r from-accent/10 to-accent-light/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="relative text-center">
+                    <span className="text-sm font-medium text-gray-300 group-hover:text-white transition-colors duration-300 block">
+                      {solution.name}
+                    </span>
+                    <span className="text-xs text-gray-500 group-hover:text-gray-300 transition-colors duration-300">
+                      {solution.description}
+                    </span>
+                  </div>
+                  
+                  {/* Floating particles effect */}
+                  <div className="absolute inset-0 pointer-events-none">
+                    {[...Array(3)].map((_, i) => (
+                      <div
+                        key={i}
+                        className="absolute w-1 h-1 bg-accent/60 rounded-full animate-pulse"
+                        style={{
+                          left: `${20 + Math.random() * 60}%`,
+                          top: `${20 + Math.random() * 60}%`,
+                          animationDelay: `${Math.random() * 2}s`
+                        }}
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
