@@ -91,27 +91,6 @@ export default function AIAgentsPage() {
           ))}
         </div>
 
-        <div className="mt-24">
-          <h2 className="text-3xl font-bold text-white text-center mb-12">Real-World Examples</h2>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            {examples.map((example, index) => (
-              <div key={index} className="bg-primary-light rounded-lg p-8">
-                <h3 className="text-xl font-bold text-white mb-4">{example.title}</h3>
-                <p className="text-gray-400 mb-6">{example.description}</p>
-                <div className="space-y-2">
-                  <h4 className="text-sm font-semibold text-accent">Key Results:</h4>
-                  {example.metrics.map((metric, metricIndex) => (
-                    <div key={metricIndex} className="flex items-center text-gray-300">
-                      <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
-                      {metric}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
         <div className="py-24">
           <div className="relative overflow-hidden rounded-3xl">
             <div className="absolute inset-0">
