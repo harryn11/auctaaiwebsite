@@ -107,7 +107,18 @@ export default function CRMAutomationPage() {
                 </p>
                 <div className="mt-8 flex justify-center">
                   <Link
-                    to="/#consultation"
+                    to="/"
+                    onClick={() => {
+                      setTimeout(() => {
+                        const element = document.getElementById('consultation');
+                        if (element) {
+                          const offset = 100; // Account for fixed navbar
+                          const elementPosition = element.getBoundingClientRect().top;
+                          const offsetPosition = elementPosition + window.pageYOffset - offset;
+                          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                        }
+                      }, 100);
+                    }}
                     className="inline-flex items-center bg-white text-primary px-8 py-3 rounded-md hover:bg-gray-100 transition-colors"
                   >
                     Book AI Consultation
