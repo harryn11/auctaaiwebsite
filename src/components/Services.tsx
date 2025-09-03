@@ -21,7 +21,7 @@ export default function Services() {
       title: "Ongoing Partnership",
       description: "Performance optimization, capability expansion, and strategic advisory services",
       image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      link: "/services/ai-agents"
+      link: "/services/ongoing-partnership"
     }
   ];
 

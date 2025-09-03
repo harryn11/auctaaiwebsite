@@ -10,6 +10,7 @@ import VoiceAgentsPage from './pages/VoiceAgentsPage';
 import DataAnalyticsPage from './pages/DataAnalyticsPage';
 import WorkflowAutomationPage from './pages/WorkflowAutomationPage';
 import PredictiveAnalyticsPage from './pages/PredictiveAnalyticsPage';
+import OngoingPartnershipPage from './pages/OngoingPartnershipPage';
 import Footer from './components/Footer';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/solutions/data-analytics" element={<DataAnalyticsPage />} />
           <Route path="/solutions/workflow-automation" element={<WorkflowAutomationPage />} />
           <Route path="/solutions/predictive-analytics" element={<PredictiveAnalyticsPage />} />
+          <Route path="/services/ongoing-partnership" element={<OngoingPartnershipPage />} />
         </Routes>
         <Footer />
       </div>
