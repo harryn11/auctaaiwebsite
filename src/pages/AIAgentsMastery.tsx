@@ -24,7 +24,7 @@ export default function AIAgentsMastery() {
         from_name: data.name,
         from_email: data.email,
         company: data.company,
-        message: `Lead Magnet Download Request - Company: ${data.company}`,
+        message: `AI Agents Mastery Download: ${data.company}`,
       };
 
       await emailjs.send(
@@ -128,21 +128,6 @@ export default function AIAgentsMastery() {
                           disabled={isSubmitting}
                         />
                         {errors.email && <p className="mt-1 text-sm text-red-500">Valid email is required</p>}
-                      </div>
-
-                      <div>
-                        <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-2">
-                          Company Name *
-                        </label>
-                        <input
-                          type="text"
-                          id="company"
-                          {...register("company", { required: true })}
-                          className={`w-full rounded-md bg-primary border ${errors.company ? 'border-red-500' : 'border-accent/20'} focus:border-accent focus:ring focus:ring-accent/20 text-white px-4 py-3`}
-                          placeholder="Enter your company name"
-                          disabled={isSubmitting}
-                        />
-                        {errors.company && <p className="mt-1 text-sm text-red-500">Company name is required</p>}
                       </div>
 
                       <button
