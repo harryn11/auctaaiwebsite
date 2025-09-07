@@ -11,6 +11,7 @@ import DataAnalyticsPage from './pages/DataAnalyticsPage';
 import WorkflowAutomationPage from './pages/WorkflowAutomationPage';
 import PredictiveAnalyticsPage from './pages/PredictiveAnalyticsPage';
 import OngoingPartnershipPage from './pages/OngoingPartnershipPage';
+import LeadMagnetPage from './pages/LeadMagnetPage';
 import Footer from './components/Footer';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path="/solutions/workflow-automation" element={<WorkflowAutomationPage />} />
           <Route path="/solutions/predictive-analytics" element={<PredictiveAnalyticsPage />} />
           <Route path="/services/ongoing-partnership" element={<OngoingPartnershipPage />} />
+          <Route path="/lead-magnet" element={<LeadMagnetPage />} />
         </Routes>
         <Footer />
       </div>
