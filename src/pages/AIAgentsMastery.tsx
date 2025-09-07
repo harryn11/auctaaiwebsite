@@ -66,15 +66,15 @@ export default function AIAgentsMastery() {
             <div>
               <div className="inline-flex items-center bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <Sparkles className="w-4 h-4 mr-2" />
-                FREE AI Strategy Guide
+                FREE AI Agents Course
               </div>
               
               <h1 className="text-4xl sm:text-5xl gradient-title-hero pb-2">
-                The Complete Guide to AI Transformation for SMBs
+                The Complete Guide to Building & Selling AI Agents
               </h1>
               
               <p className="mt-6 text-xl text-gray-300">
-                Discover how to successfully implement AI in your business with our comprehensive 25-page strategy guide. Learn the proven methodology that helps businesses avoid the 85% failure rate of AI projects.
+                Discover how to successfully build AI Agents with our comprehensive guide. 
               </p>
 
               <div className="mt-8 space-y-4">
