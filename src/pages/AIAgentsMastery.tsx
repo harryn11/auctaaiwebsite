@@ -11,7 +11,7 @@ type FormData = {
   company: string;
 };
 
-export default function LeadMagnetPage() {
+export default function AIAgentsMastery() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isDownloaded, setIsDownloaded] = useState(false);
   const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
