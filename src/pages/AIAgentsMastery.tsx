@@ -149,7 +149,7 @@ export default function AIAgentsMastery() {
                     <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
                     <h2 className="text-2xl font-bold text-white mb-2">Thank You!</h2>
                     <p className="text-gray-300 mb-6">
-                      Your AI Strategy Guide has been sent to your email. Check your inbox (and spam folder) for the download link.
+                      Your AI Agents Guide has been sent to your email. Check your inbox (and spam folder) for the download link.
                     </p>
                     <a
                       href="/"
@@ -160,37 +160,6 @@ export default function AIAgentsMastery() {
                     </a>
                   </div>
                 )}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Social Proof Section */}
-      <div className="py-16 bg-primary-light">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-2xl font-bold text-white mb-8">Trusted by Growing Businesses</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-primary rounded-lg p-6 border border-accent/20">
-                <div className="text-3xl font-bold text-accent mb-2">85%</div>
-                <div className="text-gray-300">AI Project Failure Rate</div>
-                <div className="text-sm text-gray-400 mt-2">Our methodology helps you avoid this</div>
-              </div>
-              <div className="bg-primary rounded-lg p-6 border border-accent/20">
-                <div className="text-3xl font-bold text-accent mb-2">3x</div>
-                <div className="text-gray-300">Faster Implementation</div>
-                <div className="text-sm text-gray-400 mt-2">With proper planning and education</div>
-              </div>
-              <div className="bg-primary rounded-lg p-6 border border-accent/20">
-                <div className="text-3xl font-bold text-accent mb-2">50+</div>
-                <div className="text-gray-300">SMBs Transformed</div>
-                <div className="text-sm text-gray-400 mt-2">Successfully implementing AI</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <ToastContainer
         position="bottom-right"
