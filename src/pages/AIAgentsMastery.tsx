@@ -8,7 +8,6 @@ import 'react-toastify/dist/ReactToastify.css';
 type FormData = {
   name: string;
   email: string;
-  company: string;
 };
 
 export default function LeadMagnetPage() {
@@ -23,8 +22,7 @@ export default function LeadMagnetPage() {
       const templateParams = {
         from_name: data.name,
         from_email: data.email,
-        company: data.company,
-        message: `Lead Magnet Download Request - Company: ${data.company}`,
+        message: `Lead Magnet Download Request`,
       };
 
       await emailjs.send(
@@ -130,20 +128,6 @@ export default function LeadMagnetPage() {
                         {errors.email && <p className="mt-1 text-sm text-red-500">Valid email is required</p>}
                       </div>
 
-                      <div>
-                        <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-2">
-                          Company Name *
-                        </label>
-                        <input
-                          type="text"
-                          id="company"
-                          {...register("company", { required: true })}
-                          className={`w-full rounded-md bg-primary border ${errors.company ? 'border-red-500' : 'border-accent/20'} focus:border-accent focus:ring focus:ring-accent/20 text-white px-4 py-3`}
-                          placeholder="Enter your company name"
-                          disabled={isSubmitting}
-                        />
-                        {errors.company && <p className="mt-1 text-sm text-red-500">Company name is required</p>}
-                      </div>
 
                       <button
                         type="submit"
@@ -181,31 +165,6 @@ export default function LeadMagnetPage() {
         </div>
       </div>
 
-      {/* Social Proof Section */}
-      <div className="py-16 bg-primary-light">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-2xl font-bold text-white mb-8">Trusted by Growing Businesses</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-primary rounded-lg p-6 border border-accent/20">
-                <div className="text-3xl font-bold text-accent mb-2">85%</div>
-                <div className="text-gray-300">AI Project Failure Rate</div>
-                <div className="text-sm text-gray-400 mt-2">Our methodology helps you avoid this</div>
-              </div>
-              <div className="bg-primary rounded-lg p-6 border border-accent/20">
-                <div className="text-3xl font-bold text-accent mb-2">3x</div>
-                <div className="text-gray-300">Faster Implementation</div>
-                <div className="text-sm text-gray-400 mt-2">With proper planning and education</div>
-              </div>
-              <div className="bg-primary rounded-lg p-6 border border-accent/20">
-                <div className="text-3xl font-bold text-accent mb-2">50+</div>
-                <div className="text-gray-300">SMBs Transformed</div>
-                <div className="text-sm text-gray-400 mt-2">Successfully implementing AI</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <ToastContainer
         position="bottom-right"
