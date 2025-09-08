@@ -139,6 +139,7 @@ export default function AIAgentsMastery() {
                         <ArrowRight className="w-5 h-5" />
                       </button>
                     </form>
+                    </form>
 
                     <p className="text-xs text-gray-500 text-center mt-4">
                       We respect your privacy. No spam, ever. Unsubscribe at any time.
