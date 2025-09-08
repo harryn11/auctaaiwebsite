@@ -160,6 +160,11 @@ export default function AIAgentsMastery() {
                     </a>
                   </div>
                 )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <ToastContainer
         position="bottom-right"
