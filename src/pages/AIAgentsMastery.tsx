@@ -44,11 +44,11 @@ export default function LeadMagnetPage() {
   };
 
   const benefits = [
-    "Identify the most impactful AI opportunities for your business",
-    "Understand realistic ROI expectations and timelines",
-    "Learn from real-world implementation case studies",
-    "Get a step-by-step roadmap for AI adoption",
-    "Avoid the common pitfalls that cause 85% of AI projects to fail"
+    "AI Agent Fundamentals",
+    "Understanding Tools & APIs",
+    "Practical Building Tutorials",
+    "Advanced Concepts & Best Practices",
+    "Monetization & Business Strategy"
   ];
 
   return (
@@ -64,15 +64,15 @@ export default function LeadMagnetPage() {
             <div>
               <div className="inline-flex items-center bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <Sparkles className="w-4 h-4 mr-2" />
-                FREE AI Strategy Guide
+                FREE AI Agents Course
               </div>
               
               <h1 className="text-4xl sm:text-5xl gradient-title-hero pb-2">
-                The Complete Guide to AI Transformation for SMBs
+                The Complete Guide to Building & Selling AI Agents
               </h1>
               
               <p className="mt-6 text-xl text-gray-300">
-                Discover how to successfully implement AI in your business with our comprehensive 25-page strategy guide. Learn the proven methodology that helps businesses avoid the 85% failure rate of AI projects.
+                Discover how to successfully implement AI Agents with our comprehensive guide.
               </p>
 
               <div className="mt-8 space-y-4">
@@ -94,7 +94,7 @@ export default function LeadMagnetPage() {
                     <div className="text-center mb-6">
                       <Download className="w-12 h-12 text-accent mx-auto mb-4" />
                       <h2 className="text-2xl font-bold text-white">Download Your Free Guide</h2>
-                      <p className="text-gray-400 mt-2">Get instant access to our AI transformation strategy guide</p>
+                      <p className="text-gray-400 mt-2">Get instant access to our AI Agents guide</p>
                     </div>
 
                     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
