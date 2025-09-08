@@ -11,7 +11,7 @@ type FormData = {
   company: string;
 };
 
-export default function AIAgentsMastery() {
+export default function LeadMagnetPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isDownloaded, setIsDownloaded] = useState(false);
   const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
@@ -24,7 +24,7 @@ export default function AIAgentsMastery() {
         from_name: data.name,
         from_email: data.email,
         company: data.company,
-        message: `AI Agents Mastery Download: ${data.company}`,
+        message: `Lead Magnet Download Request - Company: ${data.company}`,
       };
 
       await emailjs.send(
@@ -66,15 +66,15 @@ export default function AIAgentsMastery() {
             <div>
               <div className="inline-flex items-center bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <Sparkles className="w-4 h-4 mr-2" />
-                FREE AI Agents Course
+                FREE AI Strategy Guide
               </div>
               
               <h1 className="text-4xl sm:text-5xl gradient-title-hero pb-2">
-                The Complete Guide to Building & Selling AI Agents
+                The Complete Guide to AI Transformation for SMBs
               </h1>
               
               <p className="mt-6 text-xl text-gray-300">
-                Discover how to successfully build AI Agents with our comprehensive guide. 
+                Discover how to successfully implement AI in your business with our comprehensive 25-page strategy guide. Learn the proven methodology that helps businesses avoid the 85% failure rate of AI projects.
               </p>
 
               <div className="mt-8 space-y-4">
@@ -130,6 +130,21 @@ export default function AIAgentsMastery() {
                         {errors.email && <p className="mt-1 text-sm text-red-500">Valid email is required</p>}
                       </div>
 
+                      <div>
+                        <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-2">
+                          Company Name *
+                        </label>
+                        <input
+                          type="text"
+                          id="company"
+                          {...register("company", { required: true })}
+                          className={`w-full rounded-md bg-primary border ${errors.company ? 'border-red-500' : 'border-accent/20'} focus:border-accent focus:ring focus:ring-accent/20 text-white px-4 py-3`}
+                          placeholder="Enter your company name"
+                          disabled={isSubmitting}
+                        />
+                        {errors.company && <p className="mt-1 text-sm text-red-500">Company name is required</p>}
+                      </div>
+
                       <button
                         type="submit"
                         className={`w-full bg-accent hover:bg-accent-dark text-white px-6 py-4 rounded-md transition-colors font-semibold flex items-center justify-center gap-2 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
@@ -138,7 +153,6 @@ export default function AIAgentsMastery() {
                         {isSubmitting ? 'Sending...' : 'Download Free Guide'}
                         <ArrowRight className="w-5 h-5" />
                       </button>
-                    </form>
                     </form>
 
                     <p className="text-xs text-gray-500 text-center mt-4">
@@ -150,7 +164,7 @@ export default function AIAgentsMastery() {
                     <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
                     <h2 className="text-2xl font-bold text-white mb-2">Thank You!</h2>
                     <p className="text-gray-300 mb-6">
-                      Your AI Agents Guide has been sent to your email. Check your inbox (and spam folder) for the download link.
+                      Your AI Strategy Guide has been sent to your email. Check your inbox (and spam folder) for the download link.
                     </p>
                     <a
                       href="/"
@@ -161,6 +175,32 @@ export default function AIAgentsMastery() {
                     </a>
                   </div>
                 )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Social Proof Section */}
+      <div className="py-16 bg-primary-light">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-2xl font-bold text-white mb-8">Trusted by Growing Businesses</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-primary rounded-lg p-6 border border-accent/20">
+                <div className="text-3xl font-bold text-accent mb-2">85%</div>
+                <div className="text-gray-300">AI Project Failure Rate</div>
+                <div className="text-sm text-gray-400 mt-2">Our methodology helps you avoid this</div>
+              </div>
+              <div className="bg-primary rounded-lg p-6 border border-accent/20">
+                <div className="text-3xl font-bold text-accent mb-2">3x</div>
+                <div className="text-gray-300">Faster Implementation</div>
+                <div className="text-sm text-gray-400 mt-2">With proper planning and education</div>
+              </div>
+              <div className="bg-primary rounded-lg p-6 border border-accent/20">
+                <div className="text-3xl font-bold text-accent mb-2">50+</div>
+                <div className="text-gray-300">SMBs Transformed</div>
+                <div className="text-sm text-gray-400 mt-2">Successfully implementing AI</div>
               </div>
             </div>
           </div>
