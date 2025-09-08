@@ -31,7 +31,7 @@ function App() {
           <Route path="/solutions/workflow-automation" element={<WorkflowAutomationPage />} />
           <Route path="/solutions/predictive-analytics" element={<PredictiveAnalyticsPage />} />
           <Route path="/services/ongoing-partnership" element={<OngoingPartnershipPage />} />
-          <Route path="/lead-magnet" element={<AIAgentsMastery />} />
+          <Route path="/AIAgentsMastery" element={<AIAgentsMastery />} />
         </Routes>
         <Footer />
       </div>
