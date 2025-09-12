@@ -6,12 +6,12 @@ export default function ProcessSteps() {
     {
       icon: <BookOpen className="w-8 h-8 text-accent" />,
       title: "1. Discovery & Education",
-      description: "We assess your business and educate your team on AI's realistic potential"
+      description: "We assess your business with an AI Audit and educate you on AI's realistic potential"
     },
     {
       icon: <Target className="w-8 h-8 text-accent" />,
       title: "2. Strategic Planning",
-      description: "Together, we develop a tailored AI strategy aligned with your objectives"
+      description: "We develop a tailored AI strategy aligned with your objectives"
     },
     {
       icon: <Rocket className="w-8 h-8 text-accent" />,
