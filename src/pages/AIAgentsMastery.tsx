@@ -155,7 +155,6 @@ export default function LeadMagnetPage() {
                       className="inline-flex items-center bg-accent hover:bg-accent-dark text-white px-6 py-3 rounded-md transition-colors"
                     >
                       
-                      <ArrowRight className="ml-2 w-4 h-4" />
                     </a>
                   </div>
                 )}
