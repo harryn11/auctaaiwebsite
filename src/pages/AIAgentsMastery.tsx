@@ -155,7 +155,7 @@ export default function LeadMagnetPage() {
                 
                       
                     </a>
-                  </div>
+                 
                 )}
               </div>
             </div>
