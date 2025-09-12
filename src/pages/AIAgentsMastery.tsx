@@ -150,10 +150,9 @@ export default function LeadMagnetPage() {
                     <p className="text-gray-300 mb-6">
                       Your AI Agents Guide has been sent to your email. Check your inbox (and spam folder) for the download link.
                     </p>
-                    <a
-                      href="/"
-                      className="inline-flex items-center bg-accent hover:bg-accent-dark text-white px-6 py-3 rounded-md transition-colors"
-                    >
+                    
+             
+                
                       
                     </a>
                   </div>
