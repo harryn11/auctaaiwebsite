@@ -152,7 +152,7 @@ export default function LeadMagnetPage() {
                     </p>
                     <a
                       href="/"
-                      className=
+                      className=" 
                     </a>
                   </div>
                 )}
