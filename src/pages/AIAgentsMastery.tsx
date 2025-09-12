@@ -152,8 +152,6 @@ export default function LeadMagnetPage() {
                     </p>
                     <a
                       href="/"
-                      className="inline-flex items-center bg-accent hover:bg-accent-dark text-white px-6 py-3 rounded-md transition-colors"
-                    >
                       
                     </a>
                   </div>
