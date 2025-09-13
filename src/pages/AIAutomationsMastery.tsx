@@ -115,7 +115,7 @@ export default function AIAutomationsMastery() {
 
                       <div>
                         <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                          Business Email *
+                          Email *
                         </label>
                         <input
                           type="email"
