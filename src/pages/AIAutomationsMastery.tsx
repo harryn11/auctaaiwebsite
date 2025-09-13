@@ -148,9 +148,15 @@ export default function LeadMagnetPage() {
                     <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
                     <h2 className="text-2xl font-bold text-white mb-2">Thank You!</h2>
                     <p className="text-gray-300 mb-6">
-                      Your AI Agents Guide will be sent to your email in the next 15 minutes. Check your inbox (and spam folder) for the download link.
+                      Your AI Strategy Guide has been sent to your email. Check your inbox (and spam folder) for the download link.
                     </p>
-                  
+                    <a
+                      href="/"
+                      className="inline-flex items-center bg-accent hover:bg-accent-dark text-white px-6 py-3 rounded-md transition-colors"
+                    >
+                      Visit Our Website
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </a>
                   </div>
                 )}
               </div>
