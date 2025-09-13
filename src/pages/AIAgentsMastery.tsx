@@ -100,14 +100,14 @@ export default function LeadMagnetPage() {
                     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                       <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                          Full Name *
+                          Name *
                         </label>
                         <input
                           type="text"
                           id="name"
                           {...register("name", { required: true })}
                           className={`w-full rounded-md bg-primary border ${errors.name ? 'border-red-500' : 'border-accent/20'} focus:border-accent focus:ring focus:ring-accent/20 text-white px-4 py-3`}
-                          placeholder="Enter your full name"
+                          placeholder="Enter your name"
                           disabled={isSubmitting}
                         />
                         {errors.name && <p className="mt-1 text-sm text-red-500">Name is required</p>}
