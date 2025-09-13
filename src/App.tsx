@@ -13,6 +13,7 @@ import PredictiveAnalyticsPage from './pages/PredictiveAnalyticsPage';
 import OngoingPartnershipPage from './pages/OngoingPartnershipPage';
 import AIAgentsMastery from './pages/AIAgentsMastery';
 import Footer from './components/Footer';
+import AIAutomationsMastery from './pages/AIAutomationsMastery';
 
 function App() {
   return (
