@@ -94,7 +94,7 @@ export default function AIAutomationsMastery() {
                     <div className="text-center mb-6">
                       <Download className="w-12 h-12 text-accent mx-auto mb-4" />
                       <h2 className="text-2xl font-bold text-white">Download Your Free Guide</h2>
-                      <p className="text-gray-400 mt-2">Get instant access to our AI Agents guide</p>
+                      <p className="text-gray-400 mt-2">Get instant access to our AI automations guide</p>
                     </div>
 
                     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
