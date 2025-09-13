@@ -10,7 +10,7 @@ type FormData = {
   email: string;
 };
 
-export default function AIAutomationsMastery() {
+export default function Leadmagnetpage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isDownloaded, setIsDownloaded] = useState(false);
   const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
