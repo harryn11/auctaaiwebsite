@@ -44,11 +44,10 @@ export default function AIAutomationsMastery() {
   };
 
   const benefits = [
-    "AI Agent Fundamentals",
+    "AI Automation Fundamentals",
     "Understanding Tools & APIs",
-    "Practical Building Tutorials",
+    "Practical Automation Tutorials",
     "Advanced Concepts & Best Practices",
-    "Monetization & Business Strategy"
   ];
 
   return (
