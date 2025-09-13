@@ -33,6 +33,7 @@ function App() {
           <Route path="/solutions/predictive-analytics" element={<PredictiveAnalyticsPage />} />
           <Route path="/services/ongoing-partnership" element={<OngoingPartnershipPage />} />
           <Route path="/AIAgentsMastery" element={<AIAgentsMastery />} />
+          <Route path="/AIAutomationsMastery" element={<AIAutomationsMastery />} />
         </Routes>
         <Footer />
       </div>
