@@ -122,7 +122,7 @@ export default function AIAutomationsMastery() {
                           id="email"
                           {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
                           className={`w-full rounded-md bg-primary border ${errors.email ? 'border-red-500' : 'border-accent/20'} focus:border-accent focus:ring focus:ring-accent/20 text-white px-4 py-3`}
-                          placeholder="Enter your business email"
+                          placeholder="Enter your email"
                           disabled={isSubmitting}
                         />
                         {errors.email && <p className="mt-1 text-sm text-red-500">Valid email is required</p>}
