@@ -94,20 +94,20 @@ export default function AIAutomationsMastery() {
                     <div className="text-center mb-6">
                       <Download className="w-12 h-12 text-accent mx-auto mb-4" />
                       <h2 className="text-2xl font-bold text-white">Download Your Free Guide</h2>
-                      <p className="text-gray-400 mt-2">Get instant access to our AI automations guide</p>
+                      <p className="text-gray-400 mt-2">Get access to our AI Automations guide</p>
                     </div>
 
                     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                       <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                          Full Name *
+                          Name *
                         </label>
                         <input
                           type="text"
                           id="name"
                           {...register("name", { required: true })}
                           className={`w-full rounded-md bg-primary border ${errors.name ? 'border-red-500' : 'border-accent/20'} focus:border-accent focus:ring focus:ring-accent/20 text-white px-4 py-3`}
-                          placeholder="Enter your full name"
+                          placeholder="Enter your name"
                           disabled={isSubmitting}
                         />
                         {errors.name && <p className="mt-1 text-sm text-red-500">Name is required</p>}
@@ -148,7 +148,7 @@ export default function AIAutomationsMastery() {
                     <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
                     <h2 className="text-2xl font-bold text-white mb-2">Thank You!</h2>
                     <p className="text-gray-300 mb-6">
-                      Your AI Strategy Guide has been sent to your email. Check your inbox (and spam folder) for the download link.
+                      Your AI Automations guide has been sent to your email. Check your inbox (and spam folder) for the download link.
                     </p>
                     <a
                       href="/"
