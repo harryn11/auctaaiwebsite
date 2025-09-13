@@ -64,15 +64,15 @@ export default function AIAutomationsMastery() {
             <div>
               <div className="inline-flex items-center bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <Sparkles className="w-4 h-4 mr-2" />
-                FREE AI Agents Course
+                FREE AI Automations Course
               </div>
               
               <h1 className="text-4xl sm:text-5xl gradient-title-hero pb-2">
-                The Complete Guide to Building & Selling AI Agents
+                The Complete Guide to Building AI Automations
               </h1>
               
               <p className="mt-6 text-xl text-gray-300">
-                Discover how to successfully implement AI Agents with our comprehensive guide.
+                Discover how to successfully build AI automations from concept to implementation.
               </p>
 
               <div className="mt-8 space-y-4">
