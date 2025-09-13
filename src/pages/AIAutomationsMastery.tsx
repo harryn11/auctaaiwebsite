@@ -148,7 +148,7 @@ export default function AIAutomationsMastery() {
                     <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
                     <h2 className="text-2xl font-bold text-white mb-2">Thank You!</h2>
                     <p className="text-gray-300 mb-6">
-                      Your AI Automations guide has been sent to your email. Check your inbox (and spam folder) for the download link.
+                      Your AI Automations guide will be sent to your email within the next 15 minutes.. Check your inbox (and spam folder) for the download link.
                     </p>
                     <a
                       href="/"
