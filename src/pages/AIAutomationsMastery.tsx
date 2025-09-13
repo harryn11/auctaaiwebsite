@@ -22,7 +22,7 @@ export default function AIAutomationsMastery() {
       const templateParams = {
         from_name: data.name,
         from_email: data.email,
-        message: `AI Agents Download Request`,
+        message: `AI Automations Download Request`,
       };
 
       await emailjs.send(
